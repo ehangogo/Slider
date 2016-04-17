@@ -8,7 +8,7 @@
 轮播图组件，支持左右轮播和淡入淡出两种效果，同一个页面可以出现多个slider。不依赖其他第三方JS库，原生开发，使用方便。建议使用Google浏览器浏览(因时间原因，未能充分做兼容性测试)。
 
 ### 1、轮播
-![预览](http://120.25.221.172/img/slider.gif)
+![预览](https://github.com/ehangogo/Slider/tree/master/doc/html/img/slider.gif)
 
 ### 2、淡入淡出
 ![预览](http://120.25.221.172/img/fide.gif)
