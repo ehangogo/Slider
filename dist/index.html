@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" href="css/slider.min.css">
+
+<title>我的轮播图</title>
+</head>
+<body>
+    <!--轮播图的盒子one-->
+    <div class="box">
+       <!-- 头部标题-->
+        <div class="box-header">
+            <h4>My  Slider 1</h4>
+        </div>
+      <!-- 轮播的内容-->
+        <div class="box-content">
+            <div class="slider" id="slider1">
+                <!--  轮播图按钮-->
+               <ul class="slider-indicators">
+                    <li class="active "></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+             <!-- 轮播图内容-->
+               <div role="listbox" class="slider-items">
+                <div class="item slideactive">
+                    <img src="./img/3.jpg" /></div>
+                <div class="item">
+                    <img src="./img/2.jpg" /></div>
+                <div class="item">
+                    <img src="./img/1.jpg" /></div>
+            </div>
+            <span class="slider-control prev"><i class="iconfont">&#xe64e;</i></span>
+            <span class="slider-control next"><i class="iconfont">&#xe651;</i></span>
+           </div>
+           <!-- 左右选择按钮-->
+        </div>
+        <!--底部内容-->
+      <!--  <div class="box-footer"></div>-->
+    </div>
+
+    <!--轮播图的盒子two-->
+    <div class="box">
+       <!-- 头部标题-->
+        <div class="box-header">
+            <h4>My  Slider 2</h4>
+        </div>
+      <!-- 轮播的内容-->
+        <div class="box-content">
+            <div class="slider" id="slider2">
+                <!--  轮播图按钮-->
+               <ul class="slider-indicators">
+                    <li class="active "></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+             <!-- 轮播图内容-->
+               <div role="listbox" class="slider-items">
+                <div class="item slideactive">
+                    <img src="./img/6.jpg" /></div>
+                <div class="item">
+                    <img src="./img/5.jpg" /></div>
+                <div class="item">
+                    <img src="./img/4.jpg" /></div>
+            </div>
+            <span class="slider-control prev"><i class="iconfont">&#xe64e;</i></span>
+            <span class="slider-control next"><i class="iconfont">&#xe651;</i></span>
+           </div>
+        </div>
+        <!--底部内容-->
+      <!--  <div class="box-footer"></div>-->
+    </div>
+    <script src="js/slider.min.js"></script>
+
+  
+    <script type="text/javascript">         
+        var slideDiv = DOM("#slider1").dom[0];
+        var slider = new Slider(slideDiv, {
+            "sliderEffect": "slide",
+            "autoSlide": false,
+            "slideInterval": 2000
+        });
+        var slideDiv2 = DOM("#slider2").dom[0];
+        var slider2 = new Slider(slideDiv2, {
+            "sliderEffect": "fadeout",
+            "autoSlide": true,
+            "slideInterval": 2000
+        });
+        // 注意 now,next,prev都为dom对象,xxx.index表示改轮播图的下标索引
+        slider.on('willslide', function (now, next) {
+            console.info('slider  now:' + now.index + ' next:' + next.index);
+        });
+        slider.on('didslide', function (now, prev) {
+            console.info('slider  now:' + now.index + ' prev:' + prev.index);
+        });
+
+    </script>
+</body>
+</html>
