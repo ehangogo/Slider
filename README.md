@@ -8,10 +8,10 @@
 轮播图组件，支持左右轮播和淡入淡出两种效果，同一个页面可以出现多个slider。不依赖其他第三方JS库，原生开发，使用方便。建议使用Google浏览器浏览(因时间原因，未能充分做兼容性测试)。
 
 ### 1、轮播
-![轮播](https://github.com/ehangogo/Slider/tree/master/doc/html/img/slider.gif)
+![轮播](https://raw.githubusercontent.com/ehangogo/Slider/master/doc/html/img/slider.gif)
 
 ### 2、淡入淡出
-![淡入淡出](https://github.com/ehangogo/Slider/tree/master/doc/html/img/fide.gif)
+![淡入淡出](https://raw.githubusercontent.com/ehangogo/Slider/master/doc/html/img/fide.gif)
 
 
 ### 3、支持选项
@@ -37,7 +37,7 @@
  - [x] 轮播图核心模块（myslider.js）
 
 ## 五、目录结构
-![目录结构](https://github.com/ehangogo/Slider/tree/master/doc/html/img/slider_construction.png)
+![目录结构](https://raw.githubusercontent.com/ehangogo/Slider/master/doc/html/img/slider_construction.png)
 
 ## 六、接口文档
 
@@ -145,7 +145,7 @@ slider.on('didslide', function (now, prev) {
     console.info('slider  now:' + now.index + ' prev:' + prev.index);
 });
 ``` 
-![事件监听](http://https://github.com/ehangogo/Slider/tree/master/doc/html/img/event.gif)
+![事件监听](https://raw.githubusercontent.com/ehangogo/Slider/master/doc/html/img/event.gif)
 
 ## 七、后续开发
 - [ ] 模块之间通过require加载。
